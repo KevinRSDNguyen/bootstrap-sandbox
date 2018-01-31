@@ -80,48 +80,65 @@
 
   <div class="container">
     <!--########################START HERE#########################-->
+    <!-- Every row you have must be wrapped w/div with class of row -->
 
     <!-- RESPONSIVE GRID -->
-    <div>
-      <div style="border:1px solid #333">
-        
+    <h1>Responsive Grid</h1>
+    <div class="row">
+      <div class="col-sm-6 col-md-8 col-lg-9" style="border:1px solid #333">
+        <ul>
+          <li>6 column on small screens +</li>
+          <li>8 column on medium screens +</li>
+          <li>9 column on large screens +</li>
+        </ul>
       </div>
-      <div style="border:1px solid #333">
-       
+      <div class="col-sm-6 col-md-4 col-lg-3" style="border:1px solid #333">
+        <ul>
+          <li>6 column on small screens</li>
+          <li>4 column on mediums screens</li>
+          <li>3 column on large screens</li>
+        </ul>
       </div>
     </div>
 
     <!-- EQUAL WIDTH -->
-    <div>
-      <div style="border:1px solid #333">Equal Width</div>
-      <div style="border:1px solid #333">Equal Width</div>
-      <div style="border:1px solid #333">Equal Width</div>
+    <h1>Equal width</h1>
+    <div class="row">
+      <!-- Just adding class of col makes all of these equald width -->
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
     </div>
 
     <!-- EQUAL WIDTH MULTI ROW -->
-    <div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333"></div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
+    <h1>Equal width multi row</h1>
+    <div class="row">
+      <div class="col" style="border:1px solid #333">Equal Width multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width multi</div>
+      <d class="w-100"></d>
+      <div class="col" style="border:1px solid #333">Equal Width multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width multi</div>
     </div>
 
     <!-- AUTO LAYOUT -->
-    <div>
-      <div style="border:1px solid #333">Auto Layout</div>
-      <div style="border:1px solid #333">Auto Layout</div>
-      <div style="border:1px solid #333">Auto Layout</div>
+    <h1>Auto layout</h1>
+    <div class="row">
+      <div class="col" style="border:1px solid #333">col (autos to col-2)</div>
+      <div class="col-6" style="border:1px solid #333">col-6</div>
+      <div class="col-4" style="border:1px solid #333">col-4</div>
     </div>
 
     <!-- EQUAL WIDTH STACKED -->
-    <div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
+    <h1>Equal width stacked</h1>
+    <div class="row">
+      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
+      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
+      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
     </div>
 
     <!-- ORDERING -->
+    <h1>Ordering</h1>
     <div class="row">
       <div class="col order-3" style="border:1px solid #333">
         First
@@ -135,27 +152,29 @@
     </div>
 
     <!-- OFFSETTING -->
-    <div>
-      <div style="border:1px solid #333">4 col</div>
-      <div style="border:1px solid #333">4 col offset 4</div>
+    <h1>Offsetting</h1>
+    <div class="row">
+      <div class="col-md-4" style="border:1px solid #333">4 col</div>
+      <div class="col-md-4 ml-auto" style="border:1px solid #333">4 col ml-auto</div>
     </div>
-    <div>
-      <div style="border:1px solid #333">3 col offset 3</div>
-      <div style="border:1px solid #333">3 col offset 3</div>
+    <div class="row">
+      <div class="col-md-3 ml-auto" style="border:1px solid #333">3 col ml-auto</div>
+      <div class="col-md-3 ml-auto" style="border:1px solid #333">3 col ml-auto</div>
     </div>
-    <div>
-      <div style="border:1px solid #333">6 col offset 3</div>
+    <div class="row">
+      <div class="col-md-6 mx-auto" style="border:1px solid #333">6 col mx-auto</div>
     </div>
 
     <!-- NESTING -->
-    <div>
-      <div style="border:1px solid #333">
+    <h1>Nesting. Rows within Rows</h1>
+    <div class="row">
+      <div class="col-sm-9" style="border:1px solid #333">
         Level 1: .col-sm-9
-        <div>
-          <div style="border:1px solid red">
+        <div class="row">
+          <div class="col-sm-6" style="border:1px solid red">
             Level 2: .col-8 .col-sm-6
           </div>
-          <div style="border:1px solid red">
+          <div class="col-sm-6" style="border:1px solid red">
             Level 2: .col-4 .col-sm-6
           </div>
         </div>
